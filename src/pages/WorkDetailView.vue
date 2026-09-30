@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/* 作品详情 */
+/* 投影详情 */
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import DownloadCount from '@/components/DownloadCount.vue'
@@ -36,7 +36,7 @@ async function onDownload(): Promise<void> {
   if (!current || downloading.value) return
 
   if (!current.downloadUrl) {
-    toast('该作品未提供存档')
+    toast('该投影未提供存档')
     return
   }
 
@@ -52,13 +52,13 @@ async function onDownload(): Promise<void> {
     downloading.value = false
   }
 
-  toast(counted ? '开始下载存档，感谢支持' : '开始下载存档')
+  toast(counted ? '开始下载投影，感谢支持' : '开始下载投影')
   window.open(current.downloadUrl, '_blank', 'noopener')
 }
 
 function onVideo(): void {
   if (!work.value?.videoUrl) {
-    toast('该作品没有视频链接')
+    toast('该投影没有视频链接')
     return
   }
   window.open(work.value.videoUrl, '_blank', 'noopener')
@@ -172,14 +172,14 @@ const apiHint = computed(
       </header>
 
       <section class="detail__section" v-reveal="120">
-        <h2 class="block-title">作品说明</h2>
+        <h2 class="block-title">机器说明</h2>
         <p v-for="(para, i) in work.description.split('\n\n')" :key="i" class="paragraph">
           {{ para }}
         </p>
       </section>
 
       <section v-if="related.length" class="detail__section" v-reveal="180">
-        <h2 class="block-title">相关作品</h2>
+        <h2 class="block-title">相关投影</h2>
         <div class="rail">
           <RouterLink
             v-for="item in related"
@@ -200,9 +200,9 @@ const apiHint = computed(
     </template>
 
     <div v-else class="missing">
-      <h2>没有找到这个作品</h2>
+      <h2>没有找到这个投影文件</h2>
       <p>它可能已经被删除了，或者链接不太对。</p>
-      <RouterLink class="btn btn--primary" to="/works">回到作品列表</RouterLink>
+      <RouterLink class="btn btn--primary" to="/works">回到投影列表</RouterLink>
     </div>
   </div>
 </template>

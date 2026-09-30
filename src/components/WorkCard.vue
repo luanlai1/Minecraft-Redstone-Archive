@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/* 作品卡片 */
+/* 投影卡片 */
 import { ref } from 'vue'
 import type { Work } from '@/data/mockWorks'
 import DownloadCount from './DownloadCount.vue'

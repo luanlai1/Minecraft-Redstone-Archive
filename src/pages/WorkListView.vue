@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/* 作品列表，筛选切换时列表淡出淡出，搜索300ms防抖 */
+/* 投影列表，筛选切换时列表淡出淡出，搜索300ms防抖 */
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import EmptyState from '@/components/EmptyState.vue'
@@ -126,10 +126,10 @@ onBeforeUnmount(() => {
 <template>
   <div class="page">
     <header class="head" v-reveal="0">
-      <h1 class="head__title">全部作品</h1>
+      <h1 class="head__title">全部投影</h1>
       <p class="head__desc">
-        共 {{ workState.works.value.length }} 个作品，按上传时间倒序 ——
-        <strong>后上传的在上面</strong>，往下划才是更早的作品。
+        共 {{ workState.works.value.length }} 个投影文件，按上传时间倒序 ——
+        <strong>后上传的在上面</strong>，往下划才是更早的投影文件。
       </p>
     </header>
 
@@ -143,7 +143,7 @@ onBeforeUnmount(() => {
           v-model="keyword"
           type="search"
           placeholder="搜索标题、描述或标签…"
-          aria-label="搜索作品"
+          aria-label="搜索投影文件"
         />
       </label>
 
@@ -197,7 +197,7 @@ onBeforeUnmount(() => {
       <EmptyState
         v-else
         key="empty"
-        title="没有找到匹配的作品"
+        title="没有找到匹配的投影文件"
         desc="试着换个关键词，或选择「全部」分类重新看看。"
         action-text="清除筛选"
         @action="resetAll"
