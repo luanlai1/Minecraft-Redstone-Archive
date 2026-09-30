@@ -5,6 +5,7 @@
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/source-TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Status](https://img.shields.io/badge/status-frontend_prototype-orange)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue)
 
 > 一个用 **Vue 3 + Vite** 写的 Minecraft 红石作品档案馆。
 > 图文卡片陈列作品，每个作品配一张图、视频链接与投影下载链接，并公开显示下载量。
@@ -25,6 +26,7 @@
 - [设计规范摘要](#设计规范摘要)
 - [接后端要做的事](#接后端要做的事)
 - [已知限制与后续方向](#已知限制与后续方向)
+- [许可证](#许可证)
 
 ## 项目简介
 
@@ -307,6 +309,28 @@ function sortedByTimeDesc(list: Work[]): Work[] {
 - 多图演进：保留 `image` 作封面，新增 `work_image` 表，详情页再加画廊
 - 下载明细表 `work_download_log`：支持下载趋势图、IP 去重与防刷
 - 标签规范化（独立 `tag` 表）、全文检索、对象存储、亮色主题
+
+## 许可证
+
+本项目采用 [Apache License 2.0](LICENSE)。
+
+```text
+Copyright 2026 Hluanlaio_O
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+> 许可证只覆盖仓库里的**代码**。作品图片与投影存档等内容版权保留，转载或二次分发请先联系作者。
 
 ---
 
