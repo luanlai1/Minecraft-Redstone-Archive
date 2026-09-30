@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="双向高速铁路换乘站 占位图">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#181c24"/>
+      <stop offset="1" stop-color="#0e1118"/>
+    </linearGradient>
+    <pattern id="g5" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#2a2e37" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg5)"/>
+  <rect width="800" height="500" fill="url(#g5)" opacity=".5"/>
+
+  <!-- 站台（等距长条） -->
+  <g>
+    <path d="M130 350 400 214l270 136-270 136z" fill="#272c36"/>
+    <path d="M130 350 400 214l270 136" fill="none" stroke="#343a46" stroke-width="2"/>
+    <path d="M130 350 400 214v24L130 374z" fill="#1d222b"/>
+    <path d="M670 350 400 214v24l270 136z" fill="#1d222b"/>
+  </g>
+
+  <!-- 双向铁轨 -->
+  <g fill="#6a7180">
+    <path d="M186 350 400 242l214 108-214 108z" fill="none" stroke="#4a505c" stroke-width="14"/>
+  </g>
+  <g stroke="#8b93a3" stroke-width="3" opacity=".9">
+    <path d="M240 372 400 291l160 81"/>
+    <path d="M240 396 400 315l160 81"/>
+  </g>
+
+  <!-- 矿车 -->
+  <g>
+    <path d="M356 330h56v22h-56z" fill="#4d5462"/>
+    <path d="M356 330h56l10-6h-56z" fill="#666d7c"/>
+    <path d="M412 330l10-6v22l-10 6z" fill="#3b414c"/>
+    <circle cx="372" cy="354" r="6" fill="#2a2e37"/>
+    <circle cx="398" cy="354" r="6" fill="#2a2e37"/>
+  </g>
+
+  <!-- 信号灯与红石 -->
+  <g>
+    <rect x="196" y="300" width="8" height="56" fill="#4a4f59"/>
+    <rect x="188" y="288" width="24" height="16" rx="3" fill="#ff4b4b"/>
+    <rect x="596" y="300" width="8" height="56" fill="#4a4f59"/>
+    <rect x="588" y="288" width="24" height="16" rx="3" fill="#4caf50"/>
+  </g>
+  <g stroke="#ff4b4b" stroke-width="3" fill="none" opacity=".8">
+    <path d="M200 424h70M600 424h-70"/>
+  </g>
+
+  <text x="42" y="70" fill="#e8eaed" font-family="Segoe UI, sans-serif" font-size="26" font-weight="600">双向高速铁路换乘站</text>
+  <text x="42" y="100" fill="#9aa0a6" font-family="Segoe UI, sans-serif" font-size="14">原型占位图 · 上线时替换为你的实拍 / 渲染图</text>
+</svg>

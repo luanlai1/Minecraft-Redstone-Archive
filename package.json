@@ -1,0 +1,24 @@
+{
+  "name": "redstone-archive-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "乱来的投影档案馆",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5199 --strictPort",
+    "serve": "vite --host 127.0.0.1 --port 5199 --strictPort"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.10",
+    "@types/node": "^26.6.3",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "@vue/tsconfig": "^0.9.1",
+    "vite": "^6.0.7"
+  }
+}
