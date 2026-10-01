@@ -2,7 +2,7 @@
 node_modules/
 .pnpm-store/
 
-# 构建产物
+# 构建
 dist/
 dist-ssr/
 
@@ -19,7 +19,7 @@ pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# 编辑器 / 系统
+# 编辑器/系统
 .vscode/*
 !.vscode/extensions.json
 .idea/
