@@ -6,7 +6,7 @@ export interface ProfileLink {
   // 用户名（展示用）
   handle: string
   url: string
-  // 品牌色，用于图标与悬停配色
+  // 应用色，用于图标与悬停配色
   color: string
 }
 
@@ -24,7 +24,7 @@ export const SITE = {
 
 export const AUTHOR = {
   name: 'Hluanlaio_O',
-  handle: '@your-handle',
+  handle: '@your-MinecreaftName',
   bio: 'Minecraft 红石玩家，擅长储电及械电，赤石科技也喜欢。',
   avatar: avatar,
 }

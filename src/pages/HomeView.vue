@@ -1,12 +1,12 @@
 <script setup lang="ts">
 /* 首页 */
 import { computed, onMounted } from 'vue'
-// import WorkCard from '@/components/WorkCard.vue'
+import WorkCard from '@/components/WorkCard.vue'
 import { AUTHOR, LINKS, SITE } from '@/config/profile'
 import { fetchWorks, workState } from '@/store/work'
 
 /* 好玩的投影，最多 3 个 */
-const funWorks = computed(() => workState.works.value.filter((w) => w.featured).slice(0, 3))
+const funWorks = computed(() => workState.works.value.filter((w) => w.POhomepage).slice(0, 3))
 const total = computed(() => workState.works.value.length)
 const totalDownloads = computed(() =>
   workState.works.value.reduce((sum, w) => sum + w.downloadCount, 0),
@@ -94,13 +94,13 @@ onMounted(() => {
       </div>
 
       <div class="grid">
-        <!-- <WorkCard
+        <WorkCard
           v-for="(work, i) in funWorks"
           :key="work.id"
           :work="work"
           :index="i"
           :priority="true"
-        /> -->
+        />
       </div>
 
       <p class="order-note">
