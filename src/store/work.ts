@@ -72,7 +72,7 @@ export async function fetchWork(id: number): Promise<Work | undefined> {
 }
 
 export async function fetchFeatured(limit = 3): Promise<Work[]> {
-  return works.value.filter((w) => w.featured).slice(0, limit)
+  return works.value.filter((w) => w.POhomepage).slice(0, limit)
 }
 
 export function fetchRelated(id: number, limit = 4): Work[] {
