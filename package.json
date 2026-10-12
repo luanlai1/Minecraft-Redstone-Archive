@@ -20,5 +20,8 @@
     "@vitejs/plugin-vue": "^6.0.9",
     "@vue/tsconfig": "^0.9.1",
     "vite": "^6.0.7"
-  }
+  },
+  "overrides":{
+  "source-map-js": "^1.2.2"
+}
 }
